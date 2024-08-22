@@ -1,0 +1,142 @@
+/*---------------------
+  Universal CSS
+-----------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* if we didnot use this we will not be able to center the card verically. */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-gray-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*-------
+  Colors
+--------*/
+
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-gray-700: hsl(0, 0%, 20%);
+  --color-gray-800: hsl(0, 0%, 12%);
+  --color-gray-900: hsl(0, 0%, 8%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/*--------
+  Body
+--------*/
+
+main{
+  flex-grow: 1;
+}
+
+.card{
+  width:90%;
+  max-width: 450px;
+  margin-inline: auto;
+  background-color: var(--color-gray-800);
+  color: var(--color-white);
+  padding: 1.5em;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card-avatar{
+  border-radius: 50%;
+  width: 85px;
+  margin-inline: auto;
+}
+
+.card-text{
+  margin-top: 1.5em;
+}
+
+.card-location{
+  color: var(--color-green);
+  font-weight: 600;
+  margin-top: 0.7em;
+  font-size: 0.9rem;
+}
+
+.card-role{
+  opacity: 70%;
+  margin-top: 2em;
+  font-size: 0.9rem;
+}
+
+.card-profile-links{
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+.card-profile{
+  background-color: var(--color-gray-700);
+  border-radius: 8px;
+  padding-block: 1em;
+}
+
+.card-profile:hover{
+  background-color: var(--color-green);
+}
+
+.card-profile-link:hover{
+  color: var(--color-gray-700);
+}
+
+.card-profile-links li:not(:first-child){
+  margin-top: 1em;
+}
+
+.card-profile-link{
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+
+
+
+/*----------------
+  Media Queries
+-----------------*/
+
+@media screen and (min-width: 1100px) {
+
+  
+
+}
